@@ -29,4 +29,23 @@ public class Intro {
   }
 
 
+  /**
+     * Find the least common multiple of two numbers.
+     * @param a integer entered by the user
+     * @param b integer entered by the user
+     * @return least common multiple of both
+     */
+    private static int lcm(int a, int b)
+
+    {
+        return a * (b / gcd(a, b));
+    }
+
+
+
+
+
+
+
+
 }

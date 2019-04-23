@@ -67,6 +67,28 @@ public class Intro {
 
 
 
+   /**
+     * Prints the elements of the array
+     * @param array
+     */
+    public void printArray(int[] array)
+    {
+        for (int element:array)
+
+        {
+            System.out.print(element);
+            System.out.print(' ');
+
+        }
+
+
+    }
+
+
+
+
+
+
 
 
 

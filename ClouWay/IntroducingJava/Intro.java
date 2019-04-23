@@ -41,6 +41,31 @@ public class Intro {
         return a * (b / gcd(a, b));
     }
 
+   /**
+     * Gets the minimum element of the array
+     * @param array
+     * @return the minimum element of the array
+     */
+    public int getMinElement(int [] array)
+    {
+      int minValue = array[0];
+
+
+        for (int i = 1; i < array.length; i++) {
+
+            if ( minValue > array[i] )
+            {
+                minValue = array[i];
+            }
+        }
+
+        return minValue;
+
+
+
+    }
+
+
 
 
 

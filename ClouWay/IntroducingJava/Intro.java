@@ -85,6 +85,16 @@ public class Intro {
     }
 
 
+   /**
+     * Calculates of sum of the elements in the array
+     * @param array
+     * @return
+     */
+    public int getSum(int [] array)
+    {
+        return IntStream.of(array).sum();
+    }
+
 
 
 

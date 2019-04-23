@@ -99,6 +99,87 @@ public class Intro {
 
 
 
+    /**
+     *  partitions the intput array and returns the pivot index
+     *  Works in combination with quickSort()
+     * @param array
+     * @param begin
+     * @param pivot
+     * @return
+     */
+    public static int partition(int[] array, int begin, int pivot)
+    {
+
+     int x = array[pivot];
+
+      int i = begin - 1;
+
+        int tmp;
+
+
+        for (int k = begin; k <= pivot-1; k++) {
+
+           int current = array[k];
+
+
+            if (current < x)
+            {
+                i++;
+
+                tmp = current;
+
+                array[k] = array[i];
+                array[i] = tmp;
+
+            }
+
+        }
+
+       i++;
+
+        tmp = array[i];
+
+
+        array[i] = array[pivot];
+        array[pivot] = tmp;
+
+        return i;
+
+
+    }
+
+
+    /**
+     * quicksort main algorithm
+     * @param array
+     * @param left
+     * @param right
+     */
+    public static void quickSort(int[] array, int left, int right )
+    {
+        int pivot;
+        if (left < right)
+        {
+
+            pivot = partition(array, left, right);
+
+            quickSort(array, left, pivot-1);
+            quickSort(array, pivot+ 1,right);
+        }
+    }
+
+    /**
+     * Calls the quicksort main algorithm with the right input
+     * @param array
+     */
+    public static void sortArray(int[] array)
+    {
+
+        quickSort(array, 0, array.length-1);
+
+    }
+
+
 
 
 

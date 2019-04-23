@@ -205,6 +205,16 @@ public class Intro {
 
 
 
+   /**
+     * Reverses the order of the elements in the array
+     * @param input
+     */
+    public static void reverseList(ArrayList input)
+    {
+
+        Collections.reverse(input);
+    }
+
 
 
 
